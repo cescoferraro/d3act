@@ -12,7 +12,7 @@ export default class BubbleChart extends BaseChart {
     }
 
     setText(node) {
-        if (node.data.value > 15) { return node.data.name; }
+        if (node.data.value > this.props.LabelMinSize) { return node.data.name; }
     }
 
     onMouseOver(node) {
